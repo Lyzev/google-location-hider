@@ -1,28 +1,33 @@
-<h1 align="center">REPOSITORY-NAME</h1>
+<h1 align="center">GoogleLocationHider</h1>
 
-<p align="center">REPOSITORY-DESCRIPTION</p>
+<p align="center">A script that hides your location when you use Google. (Tampermonkey Script / Browser Extension)</p>
 
 <div align="center">
-    <a href="DISCORD-INVITE-LINK"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
+    <a href="https://discord.gg/5UmsQP4MFH"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
     <br><br>
-    <img src="https://img.shields.io/github/last-commit/USERNAME/REPOSITORY-NAME" alt="GitHub last commit"/>
-    <img src="https://img.shields.io/github/commit-activity/w/USERNAME/REPOSITORY-NAME" alt="GitHub commit activity"/>
+    <img src="https://img.shields.io/github/last-commit/Lyzev/GoogleLocationHider" alt="GitHub last commit"/>
+    <img src="https://img.shields.io/github/commit-activity/w/Lyzev/GoogleLocationHider" alt="GitHub commit activity"/>
     <br>
-    <img src="https://img.shields.io/github/languages/code-size/USERNAME/REPOSITORY-NAME" alt="GitHub code size in bytes"/>
-    <img src="https://img.shields.io/github/contributors/USERNAME/REPOSITORY-NAME" alt="GitHub contributors"/>
+    <img src="https://img.shields.io/github/languages/code-size/Lyzev/GoogleLocationHider" alt="GitHub code size in bytes"/>
+    <img src="https://img.shields.io/github/contributors/Lyzev/GoogleLocationHider" alt="GitHub contributors"/>
 </div>
 
 ## Usage
-Write here the usage.
+1. Download the [google_location_hider.js](https://github.com/Lyzev/GoogleLocationHider/releases/latest) file
+2. Open Tampermonkey in your Browser
+3. Go to the Utilities tab
+4. Press the button 'Choose File' at 'Import from file'
+5. Choose the downloaded [google_location_hider.js](https://github.com/Lyzev/GoogleLocationHider/releases/latest) file
+6. Click on install in the tab that has opened
+7. Have fun!
 
 ## Example
-Write here an example.
-
-## Documentation
-You can find the documentation [here](DOCS-LINK).
+![Example Image](GoogleLocationHider.png)
 
 ## Bugs and Suggestions
-Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/USERNAME/REPOSITORY-NAME/issues) using the templates provided. Please provide as much information as you can to best help us understand your issue and give a better chance of it being resolved.
 
-## Important
-Write here a note/something important.
+### Discord
+If you need support, you can join [this](https://discord.gg/5UmsQP4MFH) Discord server.
+
+### GitHub
+Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/Lyzev/GoogleLocationHider/issues) using the templates provided. Please provide as much information as you can to best help us understand your issue and give a better chance of it being resolved.
