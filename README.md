@@ -31,3 +31,6 @@ If you need support, you can join [this](https://discord.gg/5UmsQP4MFH) Discord 
 
 ### GitHub
 Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/Lyzev/GoogleLocationHider/issues) using the templates provided. Please provide as much information as you can to best help us understand your issue and give a better chance of it being resolved.
+
+## Important
+The idea for this project came from a friend of mine. (If he wants to be mentioned in this repo, contact me on Discord).
