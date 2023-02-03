@@ -22,7 +22,7 @@
 1. Download the [google-location-hider.zip](https://github.com/Lyzev/google-location-hider/releases/latest) file
 2. Unzip the file
 3. Open Chrome
-4. Go to [chrome://extensions/](chrome://extensions/)
+4. Go to `chrome://extensions/`
 5. Enable `Developer mode` in the top right corner
 6. Press the button `Load unpacked` in the top left corner
 7. Choose the unzipped folder
