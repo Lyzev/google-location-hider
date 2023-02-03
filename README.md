@@ -16,7 +16,17 @@
     <img src="https://img.shields.io/github/contributors/Lyzev/google-location-hider" alt="GitHub contributors"/>
 </div>
 
-## Usage
+## Installation
+
+### Chrome Extension
+1. Download the [google-location-hider.zip](https://github.com/Lyzev/google-location-hider/releases/latest) file
+2. Unzip the file
+3. Open Chrome
+4. Go to `chrome://extensions/`
+5. Enable `Developer mode` in the top right corner
+6. Press the button `Load unpacked` in the top left corner
+7. Choose the unzipped folder
+8. Have fun!
 
 ### Tampermonkey
 1. Download the [google-location-hider.js](https://github.com/Lyzev/google-location-hider/releases/latest) file
@@ -28,6 +38,7 @@
 7. Have fun!
 
 ## Showcase
+
 ### Without
 ![Example Image Without](assets/img/without.png)
 
