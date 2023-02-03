@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Google Location Hider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A extension that hides your location when you use Google.",
   "icons": {
     "16": "img/icon-16x16.png",
