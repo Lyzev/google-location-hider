@@ -7,7 +7,7 @@
 <p align="center">A script that hides your location when you use Google. (Tampermonkey Script / Browser Extension)</p>
 
 <div align="center">
-    <a href="https://discord.gg/Wfc3U8Dgn7"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
+    <a href="https://lyzev.github.io/discord/"><img src="https://img.shields.io/discord/610120595765723137?logo=discord" alt="Discord"/></a>
     <br><br>
     <img src="https://img.shields.io/github/last-commit/Lyzev/google-location-hider" alt="GitHub last commit"/>
     <img src="https://img.shields.io/github/commit-activity/w/Lyzev/google-location-hider" alt="GitHub commit activity"/>
@@ -48,7 +48,7 @@
 ## Bugs and Suggestions
 
 ### Discord
-If you need support, you can join [this](https://discord.gg/5UmsQP4MFH) Discord server.
+If you need support, you can join [this](https://lyzev.github.io/discord/) Discord server.
 
 ### GitHub
 Bug reports and suggestions should be made in this repo's [issue tracker](https://github.com/Lyzev/google-location-hider/issues) using the templates provided. Please provide as much information as you can to best help us understand your issue and give a better chance of it being resolved.
