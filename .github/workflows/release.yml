@@ -17,7 +17,7 @@ jobs:
           mkdir -p checksums
           RELEASE_DIR=release
           if [ -d "$RELEASE_DIR" ] && [ "$(ls -A $RELEASE_DIR)" ]; then
-            for asset in $RELEASE_DIR/*.zip $RELEASE_DIR/*.js; do
+            for asset in $RELEASE_DIR/*; do
               sha256sum $asset >> $GITHUB_WORKSPACE/checksums/checksums.txt
             done
           else
