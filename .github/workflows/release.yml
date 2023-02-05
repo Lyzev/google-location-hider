@@ -29,12 +29,12 @@ jobs:
         id: get_release
         uses: bruceadams/get-release@v1.3.2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
       - name: Upload Checksums
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         with:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: checksums/checksums.txt
