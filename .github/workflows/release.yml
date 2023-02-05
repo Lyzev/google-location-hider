@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Generate Checksums
         run: |
           mkdir -p checksums
@@ -24,7 +23,6 @@ jobs:
             echo "No files found in release directory"
             exit 1
          fi
-
       - name: Upload Checksums
         uses: actions/upload-artifact@v2
         with:
