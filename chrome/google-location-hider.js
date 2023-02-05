@@ -1,1 +1,5 @@
-document.getElementById("footcnt")?.remove()
+chrome.storage.local.get(["Enabled"], result => {
+    if (result["Enabled"]) {
+        document.getElementById("footcnt")?.remove()
+    }
+})

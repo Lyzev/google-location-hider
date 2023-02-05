@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Google Location Hider
-// @version      1.0.2
+// @version      1.0.3
 // @description  Removes the footer of the Google page that would otherwise show your location.
 // @author       Lyzev
 // @match       *://*.google.com/*
