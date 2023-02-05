@@ -18,7 +18,7 @@ jobs:
           RELEASE_DIR=release
           if [ -d "$RELEASE_DIR" ] && [ "$(ls -A $RELEASE_DIR)" ]; then
             for asset in $RELEASE_DIR/*.zip $RELEASE_DIR/*.js; do
-              sha256sum $asset >> $GITHUB_WORKSPACE/checksums/checksums.txt
+              sha256sum $asset >> checksums/checksums.txt
             done
           else
             echo "No files found in release directory"
@@ -26,7 +26,9 @@ jobs:
           fi
 
       - name: Upload Checksums
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-release-asset@v1
         with:
-          name: checksums.txt
-          path: checksums/checksums.txt
+          upload_url: ${{ env.UPLOAD_URL }}
+          asset_path: checksums/checksums.txt
+          asset_name: checksums.txt
+          asset_content_type: text/plain
