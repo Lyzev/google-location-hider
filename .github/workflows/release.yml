@@ -14,12 +14,13 @@ jobs:
 
       - name: Generate Checksums
         run: |
+          mkdir -p $GITHUB_WORKSPACE/checksums
           for asset in $(ls $GITHUB_WORKSPACE/release/*.zip); do
-            sha256sum $asset >> $GITHUB_WORKSPACE/checksums.txt
+            sha256sum $asset >> $GITHUB_WORKSPACE/checksums/checksums.txt
           done
 
       - name: Upload Checksums
         uses: actions/upload-artifact@v2
         with:
           name: checksums.txt
-          path: checksums.txt
+          path: checksums/checksums.txt
