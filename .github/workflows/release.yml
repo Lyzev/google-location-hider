@@ -2,7 +2,7 @@ name: Generate Checksums
 
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 jobs:
   generate-checksums:
@@ -18,17 +18,23 @@ jobs:
           RELEASE_DIR=release
           if [ -d "$RELEASE_DIR" ] && [ "$(ls -A $RELEASE_DIR)" ]; then
             for asset in $RELEASE_DIR/*.zip $RELEASE_DIR/*.js; do
-              sha256sum $asset >> checksums/checksums.txt
+              sha256sum $asset >> $GITHUB_WORKSPACE/checksums/checksums.txt
             done
           else
             echo "No files found in release directory"
             exit 1
           fi
 
+      - name: Get Release URL
+        id: get_release
+        uses: actions/get-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload Checksums
         uses: actions/upload-release-asset@v1
         with:
-          upload_url: ${{ env.UPLOAD_URL }}
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: checksums/checksums.txt
           asset_name: checksums.txt
           asset_content_type: text/plain
