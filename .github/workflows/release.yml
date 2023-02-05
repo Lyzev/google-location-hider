@@ -1,17 +1,25 @@
-name: Release
+name: Generate Checksums
 
 on:
   release:
     types: [ published ]
 
 jobs:
-  hash:
+  generate-checksums:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: MCJack123/ghaction-Generate-Release-Hashes@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Generate Checksums
+        run: |
+          for asset in $(ls $GITHUB_WORKSPACE/release/*.zip); do
+            sha256sum $asset >> $GITHUB_WORKSPACE/checksums.txt
+          done
+
+      - name: Upload Checksums
+        uses: actions/upload-artifact@v2
         with:
-          file-name: hashes.txt
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Asset Hashes
-          path: hashes.txt
+          name: checksums.txt
+          path: checksums.txt
